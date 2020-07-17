@@ -8,9 +8,9 @@ class GradeTable extends React.Component {
       <table className="table">
         <thead className="thead-light">
           <tr>
-            <th scope="col" className="col-3"> Student Name</th>
-            <th scope="col" className="col-3"> Course</th>
-            <th scope="col" className="col-3"> Grades</th>
+            <th scope="col" className="col-12 col-md-3"> Student Name</th>
+            <th scope="col" className="col-12 col-md-3"> Course</th>
+            <th scope="col" className="col-12 col-md-3"> Grades</th>
           </tr>
         </thead>
         <tbody className="table-striped table-hover">

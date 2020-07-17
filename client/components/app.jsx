@@ -13,8 +13,10 @@ class App extends React.Component {
 
   render() {
     return <>
-      <Header />
-      <GradeTable grades={this.state.grades}/>
+      <div className="container">
+        <Header />
+        <GradeTable grades={this.state.grades}/>
+      </div>
     </>;
   }
 }

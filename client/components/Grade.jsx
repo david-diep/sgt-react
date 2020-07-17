@@ -3,10 +3,11 @@ import React from 'react';
 class Grade extends React.Component {
   render() {
     return (
-      <tr>
-        <th scope="col" className="col-3">{this.props.grade.name}</th>
-        <th scope="col" className="col">{this.props.grade.course}</th>
-        <th scope="col" className="col">{this.props.grade.grade}</th>
+      <tr scope="row">
+
+        <td className="col-12 col-md-3">{this.props.grade.name}</td>
+        <td className="col-12 col-md-3">{this.props.grade.course}</td>
+        <td className="col-12 col-md-3">{this.props.grade.grade}</td>
       </tr>
     );
   }
