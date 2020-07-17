@@ -1,11 +1,11 @@
 import React from 'react';
-import Grade from './Grade';
+import Grade from './grade';
 
 class GradeTable extends React.Component {
 
   render() {
     return (<>
-      <table className="table">
+      <table className="table col-12 col-md-9">
         <thead className="thead-light">
           <tr>
             <th scope="col" > Student Name</th>
