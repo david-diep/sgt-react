@@ -5,7 +5,6 @@ class App extends React.Component {
   constructor(prop) {
     super(prop);
     this.state = { grades: [] };
-    this.getAverageGrade = this.getAverageGrade.bind(this);
   }
 
   getAverageGrade() {

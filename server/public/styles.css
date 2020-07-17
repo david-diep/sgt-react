@@ -3,10 +3,6 @@ header{
   margin-top: 15px;
 }
 
-.header-row{
-  display:flex;
-  justify-content: space-between;
-}
 
 @media (min-width:700px) {.average{
   position:relative;
