@@ -19,11 +19,9 @@ class GradeTable extends React.Component {
             <Grade key={grade.id} grade={grade} deleteGrade={this.props.deleteGrade}/>
           )}
         </tbody>
+        {this.props.grades.length === 0 && <p>No grades recorded</p>}
       </table>
-
-      {/* more rows */}
-
-      {this.props.grades.length === 0 && <p>No grades recorded</p>}</>
+    </>
     );
   }
 }
