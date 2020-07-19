@@ -14,6 +14,7 @@ class GradeForm extends React.Component {
     event.preventDefault();
     var grade = { name: this.state.name, course: this.state.course, grade: this.state.grade };
     this.props.newGrade(grade);
+    this.setState({ name: '', course: '', grade: '' });
   }
 
   handleName(event) {

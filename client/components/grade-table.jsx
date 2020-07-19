@@ -8,21 +8,20 @@ class GradeTable extends React.Component {
       <table className="table col-12 col-md-9">
         <thead className="thead-light">
           <tr>
-            <th scope="col" > Student Name</th>
-            <th scope="col" > Course</th>
-            <th scope="col" > Grades</th>
+            <th scope="col" >Student Name</th>
+            <th scope="col" >Course</th>
+            <th scope="col" >Grades</th>
+            <th scope="col" >Operations</th>
           </tr>
         </thead>
-        <tbody className="table-striped table-hover">
+        <tbody className="table-striped">
           {this.props.grades.map(grade =>
-            <Grade key={grade.id} grade={grade} />
+            <Grade key={grade.id} grade={grade} deleteGrade={this.props.deleteGrade}/>
           )}
         </tbody>
+        {this.props.grades.length === 0 && <p>No grades recorded</p>}
       </table>
-
-      {/* more rows */}
-
-      {this.props.grades.length === 0 && <p>No grades recorded</p>}</>
+    </>
     );
   }
 }
